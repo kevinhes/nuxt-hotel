@@ -2,10 +2,12 @@
 const router = useRouter()
 const route = useRoute()
 // console.log(route.params);
-
+const layout = 'user-layout'
 router.push(`/user/a/profile`)
 </script>
 <template>
-  <NuxtPage></NuxtPage>
+  <NuxtLayout :name="layout">
+    <NuxtPage></NuxtPage>
+  </NuxtLayout>
 </template>
 <style scoped></style>

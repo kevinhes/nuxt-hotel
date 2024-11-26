@@ -35,36 +35,26 @@ import { RouterLink, RouterView } from 'vue-router';
       <div class="container">
         <ul class="nav mb-10 mb-md-20 fw-bold">
           <li class="nav-item position-relative">
-            <RouterLink
-              :to="{
-                name: 'user-profile',
-                params: {
-                  userId: $route.params.userId
-                }
-              }"
+            <NuxtLink
+              to="/user/a/profile"
               exact-active-class="text-primary-100"
               class="nav-link px-6 py-4 text-white"
             >
               個人資料
-            </RouterLink>
+            </NuxtLink>
           </li>
           <li class="nav-item position-relative">
-            <RouterLink
-              :to="{
-                name: 'user-order',
-                params: {
-                  userId: $route.params.userId
-                }
-              }"
+            <NuxtLink
+              to="/user/a/order"
               exact-active-class="text-primary-100"
               class="nav-link px-6 py-4 text-white"
             >
               我的訂單
-            </RouterLink>
+            </NuxtLink>
           </li>
         </ul>
         
-        <RouterView />
+        <slot />
       </div>
     </section>
 

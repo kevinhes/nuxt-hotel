@@ -6,7 +6,6 @@
 <template>
   <div>
     <LayoutAppHeader />
-    Layout: default
     <slot />
     <LayoutAppFooter />
   </div>
